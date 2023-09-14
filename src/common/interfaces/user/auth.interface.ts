@@ -1,0 +1,24 @@
+export interface IUserRole {
+  key: RoleKey | string;
+  role: string;
+}
+
+enum RoleKey {
+  ADMIN,
+  AUDITOR,
+  TRANSCRIBER,
+  PREPARER,
+  MANAGEMENT,
+  SITEADMIN,
+  GLOBALSITEADMIN
+}
+
+export enum Roles {
+  ADMIN = 'ADMIN',
+  SITEADMIN = 'SITEADMIN',
+  AUDITOR = 'AUDITOR',
+  MANAGEMENT = 'MANAGEMENT',
+  TRANSCRIBER = 'TRANSCRIBER',
+  PREPARER = 'PREPARER',
+  GLOBALSITEADMIN = 'GLOBALSITEADMIN'
+}
